@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: zkClient1
+  config:
+    import: "zookeeper:"
+  cloud:
+    zookeeper:
+      config:
+        enabled: true
+      connectString: localhost:2192,localhost:2191,localhost:2193
